@@ -84,7 +84,7 @@ A Django REST Framework application that allows for CRUD operations on employee 
 
 3. **Install dependencies using pip:**
    ```bash
-   pip install -r requirements.txt
+   pip install -r requirement.txt
    ```    
 
 ### Database Setup
@@ -106,11 +106,11 @@ python manage.py runserver
 The API will be available at `http://localhost:8000/`.   
 
 
-# API Endpoints Documentation
+## API Endpoints Documentation
 
-## Auth Endpoints
+### Auth Endpoints
 
-### User Signup
+#### User Signup
 
 - **Endpoint:** `POST /api/signup/`
 - **Headers:**
@@ -125,7 +125,7 @@ The API will be available at `http://localhost:8000/`.
     }
     ```
 
-### User Login
+#### User Login
 
 - **Endpoint:** `POST /api/login/`
 - **Headers:**
@@ -147,9 +147,9 @@ The API will be available at `http://localhost:8000/`.
     }
     ```
 
-# Employee Endpoints
+### Employee Endpoints
 
-## List Employees
+#### List Employees
 
 - **Endpoint:** `GET /api/employees/`
 - **Headers:**
@@ -157,7 +157,7 @@ The API will be available at `http://localhost:8000/`.
     Authorization: Bearer your_access_token
     ```
 
-## Create Employee
+#### Create Employee
 
 - **Endpoint:** `POST /api/employees/`
 - **Headers:**
@@ -177,7 +177,7 @@ The API will be available at `http://localhost:8000/`.
     }
     ```
 
-## Retrieve Employee
+#### Retrieve Employee
 
 - **Endpoint:** `GET /api/employees/{id}/`
 - **Headers:**
@@ -185,7 +185,7 @@ The API will be available at `http://localhost:8000/`.
     Authorization: Bearer your_access_token
     ```
 
-## Update Employee
+#### Update Employee
 
 - **Endpoint:** `PUT /api/employees/{id}/`
 - **Headers:**
@@ -205,11 +205,16 @@ The API will be available at `http://localhost:8000/`.
     }
     ```
 
-## Delete Employee
+#### Delete Employee
 
 - **Endpoint:** `DELETE /api/employees/{id}/`
 - **Headers:**
     ```plaintext
     Authorization: Bearer your_access_token
     ```
+
+## Additional Notes
+
+- Ensure that the MySQL server is running and accessible with the provided credentials.
+- For production environments, you should set `DEBUG` to `False` and configure other security settings accordingly.
 
