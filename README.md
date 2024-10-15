@@ -31,6 +31,9 @@ A Django REST Framework application that allows for CRUD operations on employee 
 
    ```bash
    git clone https://github.com/hemantcgupta/Employee-Management.git
+   ```
+
+   ```bash
    cd Employee-Management
    ```
 2. **Create a `.env` file** in the root directory of your Django project.
